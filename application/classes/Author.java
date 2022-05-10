@@ -76,6 +76,7 @@ public class Author implements IAuthorFactory {
         String tempListOfBooks = "";                             //-> compare with all author's names  ->
         System.out.println("Year of birth: ");                   //-> add the book's name to the author's list of books
         int tempYearBirth = AddFunction.checkIntInput();
+
         for (int i = 0; i < AddFunction.listOfBooks.size(); i++) {
             if (((AddFunction.listOfBooks.get(i).getAuthor())
                     .equalsIgnoreCase(tempFirstname + " " + tempLastname))) {
